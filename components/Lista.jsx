@@ -5,7 +5,9 @@ export default function Lista(props) {
       <ul style={{
         listStyle:"none",
         padding: 0
-      }}>{props.children}</ul>
+      }}>
+        {props.children}
+        </ul>
     </ul>
   );
 }
