@@ -1,40 +1,23 @@
 import { useState } from "react";
-import ContadorDisplay from "../../components/ContadorDisplay";
+import NumeroDisplay from "../../components/NumeroDisplay";
 
 export default function contador() {
   const [num, setNum] = useState(0);
-
-  function inc() {
-    setNum(num - 1);
-  }
-
-  function dec() {
-    setNum(num + 1);
-  }
-
-  const increment = () => setNum(num - 1);
-
+  
+  const increment = () => setNum(num + 1);
   const decrement = () => setNum(num - 1);
 
   return (
-    <div style={{ 
-        
+    <div
+      style={{
         display: "flex",
-        flexDirection:"column",
-        justifyContent:"center",
-        alignItems:"center"
-
-    }}>
-      <div>
-        <button onClick={() => setNum(num - 1)}>-</button>
-        <button onClick={() => setNum(num + 1)}>+</button>
-      </div>
-      
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <h1>Contador</h1>
-      <ContadorDisplay numero={num} />
-      <div>Valor: {num}</div>
-      <button onClick={inc}>-</button>
-      <button onClick={dec}>+</button>
+      <NumeroDisplay numero={num} />
 
       <div>
         <button onClick={increment}>-</button>
