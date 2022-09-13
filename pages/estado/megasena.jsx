@@ -8,7 +8,7 @@ export default function megasena() {
     const [numeros, setNumeros] = useState([])
 
     useEffect(() =>{
-        setNumeros(mega(qtde))
+        setNumeros(mega())
     },[])
     
     function renderNumeros(){
@@ -18,13 +18,13 @@ export default function megasena() {
 
     return(
         <div style={{
-            display: "flex",
-       
+            display: "flex", 
             flexDirection: "column",
             alignItems: "center"
             
         }}>
             <h1>Mega Sena</h1>
+            
             <div style={{
             display: "flex", 
               justifyContent:"center" , 

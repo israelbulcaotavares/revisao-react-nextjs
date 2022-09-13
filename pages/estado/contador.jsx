@@ -1,5 +1,5 @@
 import { useState } from "react";
-import NumeroDisplay from "../../components/NumeroDisplay";
+import ContadorDisplay from "../../components/ContadorDisplay";
 
 export default function contador() {
   const [num, setNum] = useState(0);
@@ -17,11 +17,11 @@ export default function contador() {
       }}
     >
       <h1>Contador</h1>
-      <NumeroDisplay numero={num} />
+      <ContadorDisplay numero={num} />
 
       <div>
-        <button onClick={increment}>-</button>
-        <button onClick={decrement}>+</button>
+        <button onClick={increment}>+</button>
+        <button onClick={decrement}>-</button>
       </div>
     </div>
   );
