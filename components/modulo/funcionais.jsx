@@ -7,7 +7,6 @@ export function Comp1(){
     )
 }
 
-
 /* FUNÇÃO COM DEFAULT  */
 //   export default function Comp2(){
 //       return(
